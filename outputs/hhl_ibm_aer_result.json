@@ -1,0 +1,94 @@
+{
+  "provider": "IBM Quantum / Qiskit",
+  "simulator": "qiskit-aer AerSimulator",
+  "algorithm": "HHL sparse Hermitian matrix decomposition",
+  "system": {
+    "matrix": "diag(1, 2)",
+    "right_hand_side": "|0>",
+    "post_selection": "ancilla c[0] == 1"
+  },
+  "qasm_source": "/Users/gokulalex/Code/CC/AbzuNet/circuits/hhl_sparse_hermitian_decomposition.qasm",
+  "shots": 4096,
+  "seed": 7331,
+  "versions": {
+    "qiskit": "2.5.0",
+    "qiskit-aer": "0.17.2",
+    "qiskit-qasm3-import": "0.6.0"
+  },
+  "source_circuit": {
+    "qubits": 4,
+    "classical_bits": 1,
+    "depth": 12,
+    "operations": {
+      "h": 6,
+      "cu": 4,
+      "cp": 2,
+      "x": 2,
+      "cry": 2,
+      "measure": 1
+    }
+  },
+  "compiled_unitary_circuit": {
+    "backend": "aer_simulator_statevector",
+    "depth": 12,
+    "operations": {
+      "h": 6,
+      "cu": 4,
+      "cp": 2,
+      "x": 2,
+      "cry": 2
+    },
+    "qasm3_output": "/Users/gokulalex/Code/CC/AbzuNet/outputs/hhl_ibm_aer_transpiled.qasm"
+  },
+  "statevector_job_circuit": {
+    "backend": "aer_simulator_statevector",
+    "depth": 12,
+    "operations": {
+      "h": 6,
+      "cu": 4,
+      "cp": 2,
+      "x": 2,
+      "cry": 2,
+      "save_statevector": 1
+    }
+  },
+  "compiled_measurement_circuit": {
+    "backend": "aer_simulator",
+    "depth": 12,
+    "operations": {
+      "h": 6,
+      "cu": 4,
+      "cp": 2,
+      "x": 2,
+      "cry": 2,
+      "measure": 1
+    }
+  },
+  "statevector_probabilities_before_measurement": {
+    "0000": 2.0074684e-05,
+    "0001": 9.3726278e-05,
+    "0010": 0.000480361637,
+    "0011": 0.000182955315,
+    "0100": 0.000141447511,
+    "0101": 0.004497425996,
+    "0110": 0.005280963178,
+    "0111": 0.001314979302,
+    "1000": 0.243272150728,
+    "1001": 0.247759312024,
+    "1010": 0.229200516058,
+    "1011": 0.196147191599,
+    "1100": 0.002148423572,
+    "1101": 0.002067439208,
+    "1110": 0.019456062633,
+    "1111": 0.04793697028
+  },
+  "measurement_counts": {
+    "0": 56,
+    "1": 4040
+  },
+  "post_selection": {
+    "classical_condition": "c[0] == 1",
+    "ancilla_one_count": 4040,
+    "ancilla_one_probability": 0.986328125
+  }
+}
