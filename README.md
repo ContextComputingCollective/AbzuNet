@@ -9,7 +9,6 @@ with IBM Qiskit, transpiles it for Qiskit Aer, and submits it to the local Aer
 simulator.
 
 ```bash
-/Users/gokulalex/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m venv .venv
 . .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
